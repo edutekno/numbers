@@ -20134,11 +20134,11 @@ cr.behaviors.DragnDrop = function(runtime)
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Button,
 	cr.plugins_.Keyboard,
-	cr.plugins_.Text,
+	cr.plugins_.TextBox,
+	cr.plugins_.Sprite,
 	cr.plugins_.Touch,
 	cr.plugins_.Particles,
-	cr.plugins_.Sprite,
-	cr.plugins_.TextBox,
+	cr.plugins_.Text,
 	cr.behaviors.DragnDrop,
 	cr.system_object.prototype.cnds.OnLayoutStart,
 	cr.plugins_.Sprite.prototype.acts.StopAnim,
@@ -20158,5 +20158,6 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Button.prototype.cnds.OnClicked,
 	cr.plugins_.Text.prototype.acts.SetText,
 	cr.plugins_.TextBox.prototype.exps.Text,
-	cr.plugins_.Text.prototype.acts.Destroy
+	cr.plugins_.Text.prototype.acts.Destroy,
+	cr.system_object.prototype.acts.GoToLayout
 ];};
